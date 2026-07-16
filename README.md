@@ -1,6 +1,22 @@
-# Universal Joomla Scanner & DevSecOps Audit Dashboard
+🇮🇷 **برای مطالعه راهنمای فارسی این پروژه، [اینجا را کلیک کنید](README.fa.md).**
+# 🛡️ Universal Joomla Extension Auditor & Inventory Scanner (DevSecOps Edition)
 
 An enterprise-grade, highly optimized Linux server-wide automated security auditing tool designed for Web Hosts, SysAdmins, and DevSecOps teams. It scans the entire file system, isolates Joomla CMS footprints, indexes custom 3rd-party components, and cross-references live update lifecycles utilizing a robust hybrid network/authenticated fallback architecture.
+
+---
+
+### ⚡ Core Features & Capabilities
+
+*   **🔑 Dynamic ASCII Art & Authentication Layer:** Upon launch, the scanner renders a custom, dynamic ASCII banner embedded with licensing metadata. It includes an integrated security authentication gate to prevent unauthorized execution within sensitive production environments.
+*   **📡 Inverse Hybrid Lookup Engine:** The version auditing framework utilizes a resilient dual-layer verification process: Live Online Feed dynamically fetches the latest stable release versions directly from official vendor endpoints, while Offline Fallback automatically switches to the local database `/root/joomla_commercial_db.txt` if network anomalies or API blocks occur, ensuring uninterrupted audits.
+*   **⚙️ Parallel Resource Management & CPU Optimization:** To mitigate CPU overhead on dense servers hosting thousands of accounts, file-system traversing is processed via controlled parallel routines, delivering exceptional scanning velocities without impacting server stability.
+*   **🔍 Core vs Extension Structural Isolation:** By analyzing XML manifest structures and monitoring `administrator/components` layouts, the scanner accurately isolates native Joomla core variables from commercial/third-party add-ons, eliminating duplicates and false positives.
+*   **📋 Consolidated Report Matrix & Quick Ticket-Copy:** The auditing pipeline culminates in a cleanly formatted security ticket containing an expiration matrix table. System administrators can copy this matrix with a single click to instantly dispatch warning notices to end-users.
+*   **⚡ Client-Side Live Search Interface:** The generated HTML report embeds a high-performance JavaScript filtering mechanism. Administrators can query specific extension slugs or domain names to filter thousands of records instantly on the fly.
+*   **📊 Tri-Format Multi-Purpose Reporting Engine:** The scanner outputs audit results simultaneously into three standardized formats to accommodate diverse administrative needs: Text Report (`.txt`) optimized for rapid command-line inspections, Structured Data (`.json`) tailored for integration with SIEM architectures and Zabbix monitoring layers, and Web Dashboard (`.html`) featuring a modern Bootstrap UI with vivid, color-coded security badges (Green for Secure, Red for Outdated).
+*   **🌐 Native RTL Support & Universal Localization:** The web-based dashboard is built with a dual-language infrastructure, offering complete Right-to-Left (RTL) compatibility for Persian and Left-to-Right (LTR) for English, ensuring presentation-ready corporate reporting.
+*   **📝 Extensible Local Database Customization:** System engineers can painlessly expand the signature database to map custom commercial extensions. The local signature text file can be modified via: `nano /root/joomla_commercial_db.txt` (Storage Format: `extension_slug|major_joomla_version|latest_stable_version`).
+*   **📦 Panel-Agnostic & Future-Proof Architecture:** The script operates independently of web control panels like cPanel, DirectAdmin, or Plesk, interfacing directly with the Linux kernel layer. The directory matching patterns are fully optimized for Joomla 4.x and Joomla 5.x architectures.
 
 ---
 
@@ -63,6 +79,14 @@ To execute the automation framework on a Linux server node, follow these operati
    ./joomla_scanner.sh
    ```
 
+### 🚀 Quick One-Liner Installation & Auto-Update
+
+Execute the following command in your root terminal to pull and execute the scanner instantly without manual configuration:
+
+```bash
+cd /root/ && rm -f joomla_scanner.sh && wget -q https://githubusercontent.com && chmod +x joomla_scanner.sh && ./joomla_scanner.sh
+```
+
 ---
 
 ## 7. Pre-Requisites Prior to Re-Running Scans
@@ -90,5 +114,5 @@ Premium extension ecosystems are equipped with a structural **Parent Priority Gu
 
 ## 10. Deprecated Structural Code Architecture (Cleanup Logic)
 To maintain code cleanliness and protect future optimization sequences, the following legacy code components have been fully deprecated, removed, and **must not** be reintroduced:
-* **The Legacy `sed` Component Stripper:** Older manifest name parsers utilizing faulty string masks such as `[:space覆]` caused JSON parsing token failures and blank page rendering crashes. These have been completely replaced by clean `tr -d '\r'` Linux pipelines.
+* **The Legacy `sed` Component Stripper:** Older manifest name parsers utilizing faulty string masks such as `[:space]` caused JSON parsing token failures and blank page rendering crashes. These have been completely replaced by clean `tr -d '\r'` Linux pipelines.
 * **The Fragile JS `row.cells` DOM Indexer:** Using cell object properties directly without target index constraints within the search engine triggered active **TypeErrors**, causing layout trees to crash. This layout has been completely deprecated in favour of native `row.innerText` streams.
