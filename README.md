@@ -84,7 +84,7 @@ To execute the automation framework on a Linux server node, follow these operati
 Execute the following command in your root terminal to pull and execute the scanner instantly without manual configuration:
 
 ```bash
-cd /root/ && rm -f joomla_scanner.sh && wget -q https://githubusercontent.com && chmod +x joomla_scanner.sh && ./joomla_scanner.sh
+cd /root/ && rm -f joomla_scanner.sh && wget -q https://raw.githubusercontent.com/MahdiAhazan/Joomla-Scanner/refs/heads/main/joomla_scanner.sh && chmod +x joomla_scanner.sh && ./joomla_scanner.sh
 ```
 
 ---
