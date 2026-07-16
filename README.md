@@ -1,4 +1,4 @@
-🇮🇷 **برای مطالعه راهنمای فارسی این پروژه، [اینجا را کلیک کنید](README.FA.md).**
+🇮🇷 **برای مطالعه راهنمای فارسی این پروژه، [اینجا را کلیک کنید](README.fa.md).**
 # 🛡️ Universal Joomla Extension Auditor & Inventory Scanner (DevSecOps Edition)
 
 An enterprise-grade, highly optimized Linux server-wide automated security auditing tool designed for Web Hosts, SysAdmins, and DevSecOps teams. It scans the entire file system, isolates Joomla CMS footprints, indexes custom 3rd-party components, and cross-references live update lifecycles utilizing a robust hybrid network/authenticated fallback architecture.
