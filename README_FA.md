@@ -83,7 +83,7 @@ nano /root/joomla_commercial_db.txt
 جهت اجرای آنی اسکنر بدون نیاز به پیکربندی دستی، فرمان زیر را در ترمینال روت اجرا نمایید:
 
 ```bash
-cd /root/ && rm -f joomla_scanner.sh && wget -q https://githubusercontent.com && chmod +x joomla_scanner.sh && ./joomla_scanner.sh
+cd /root/ && rm -f joomla_scanner.sh && wget -q https://raw.githubusercontent.com/MahdiAhazan/Joomla-Scanner/refs/heads/main/joomla_scanner.sh && chmod +x joomla_scanner.sh && ./joomla_scanner.sh
 ```
 
 ---
